@@ -11,7 +11,7 @@ let visitor = ("14")
 alert("You have visited this site " + visitor +" times")
 // question 3 Declare a variable called birthYear & assign to it your
 // birth year. Show the following message in your browser:
-let birthYear =("1990")
+let birthYear ="1990"
 document.write("My birth year is " +birthYear +"<br>" )
 document.write("Data type of my declared variable is number"+"<br>" )
 // question 4 A visitor visits an online clothing store
@@ -23,8 +23,8 @@ document.write("Data type of my declared variable is number"+"<br>" )
 // order
 // Show the following message in your browser: “John
 // Doe ordered 5 T-shirt(s) on XYZ Clothing store”.
-let visitorName =("John doe")
-let productTitle =("LVMH clothing store")
-let quantity=("5-tshirts")
+let visitorName ="John doe"
+let productTitle ="LVMH clothing store"
+let quantity="5-tshirts"
 document.write(visitorName +" ordered " + quantity +"(s)on " + productTitle) 
 
