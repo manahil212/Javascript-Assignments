@@ -35,13 +35,13 @@ document.write(`<h2>Initial value is ${num}</h2>`);
 num++;
 // f. Show the value of variable in your browser like “Value
 // after increment is: 6”.
-document.write(`<h2>Value after increment is ${num++}</h2>`);
+document.write(`<h2>Value after increment is ${num}</h2>`);
 // g. Add 7 to the variable.
 num = num+7
 // h. Show the value of variable in your browser like “Value after addition is: 13”.
 document.write(`<h2>Value after addition is ${num}</h2>`);
 // i. Decrement the variable.
-num = num--
+ num--
 // j. Show the value of variable in your browser like “Value
 // after decrement is: 12”.
 document.write(`<h2>Value after decrement is ${num}</h2>`);
@@ -190,13 +190,13 @@ document.write(`The area is : ${areaOfACircle}`)
 //13. The Lifetime Supply Calculator: Ever wonder how much a “lifetime supply” of your favorite snack is?
 //Answer
 //a. Store your favorite snack into a variable
-let favouriteSnack = chocolatechip
+let favouriteSnack = "chocolatechip"
 // b. Store your current age into a variable.
-let currentAge = 22
+let currentAge = "22"
 // c. Store a maximum age into a variable.
-let maxAge = 65
+let maxAge = "65"
 // d. Store an estimated amount per day (as a number).
-let perDay = 3
+let perDay = "3"
 // e. Calculate how many would you eat total for the rest of
 // your life.
 let totalSnacks =(maxAge - currentAge) * 365 * perDay;
