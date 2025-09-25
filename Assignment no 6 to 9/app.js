@@ -51,14 +51,13 @@ document.write(`Hello ${userName}, welcome to js`)
 // display it’s multiplication table on your browser. If user
 // does not enter a new number, multiplication table of 5
 // should be displayed by default.
-let userNumber = +prompt("Enter your number")
+let num = +prompt("Enter your number")
 if(!num){
   number = 5
 }
-i = 1
-document.write(`<h2>Multiplication of table ${num}<br>`)
+
+document.write(`<h2>Multiplication of table ${number}<br>`)
  let i = 1
-   document.write(`${num} * ${i} = ${num*i}<br>`)
 
 document.write(`${number} * ${i} = ${number*i} <br>`)
 i++
@@ -95,7 +94,7 @@ let marks3 = Number(prompt(`Enter obtained marks for ${sub3}`))
 // d) Now calculate total marks and percentage 
 let totalMarks= totalMarksPerSubject* 3
 let obtainedMarks =  marks1 + marks2 + marks3
-let percentafge = (obtainedMarks/totalMarks)*100
+let percentage = (obtainedMarks/totalMarks)*100
 // e show result in table
 
 document.write(`
@@ -132,6 +131,5 @@ document.write(`
       <th></th>
       <th>${totalMarks}</th>
       <th>${obtainedMarks}</th>
-      <th>${percentafgetoFixed(0)}%</th>
         </tr>
         </table>`)
