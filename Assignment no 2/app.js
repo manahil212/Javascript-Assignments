@@ -101,7 +101,7 @@ if(array[i] > largestNum){
 console.log(largestNum);
 
 // 
-let
+
 
 
 
@@ -122,3 +122,56 @@ let
 
 // alert("student name")
 // document.write("student name")
+
+
+// / // loop and Nested loop
+// loop
+// we use loops to repeat the set of instrunctions without writing the same code;
+// with aloop you just write few lines and the loop handles the else repiettation automatically
+
+// Nested loop 
+// loop kai ander aik or nested loop banaiga
+
+// PRACTISE
+// outer loop()
+    for(let i = 1; i <= 5; i++){
+        // inner loop
+    for(let j = 1; j <= i; j++){
+      document.write("*");
+    }
+ document.write("</br>");
+ 
+ 
+}  
+
+// outer loop(5 rows 5 coloums)
+    for(let i = 1; i <= 5; i++){
+        // inner loop
+    for(let j = 1; j <= 5; j++){
+      document.write("*");
+    }
+ document.write("</br>");
+ 
+}  
+
+// odd numbers
+ for(let i = 1; i <= 10; i=i+2){
+        // inner loop
+    for(let j = 1; j <= i; j++){
+      document.write("*");
+    }
+ document.write("</br>");
+ 
+} 
+
+for(let i = 1; i <= 10; i++){
+        // inner loop
+    for(let j = 10; j >= i; j--){
+      document.write("*");
+    }
+ document.write("</br>");
+ 
+} 
+
+
+
