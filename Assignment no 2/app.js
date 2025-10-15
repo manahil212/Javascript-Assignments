@@ -132,46 +132,131 @@ console.log(largestNum);
 // Nested loop 
 // loop kai ander aik or nested loop banaiga
 
-// PRACTISE
-// outer loop()
-    for(let i = 1; i <= 5; i++){
-        // inner loop
-    for(let j = 1; j <= i; j++){
-      document.write("*");
-    }
- document.write("</br>");
+// // PRACTISE
+// // outer loop()
+//     for(let i = 1; i <= 5; i++){
+//         // inner loop
+//     for(let j = 1; j <= i; j++){
+//       document.write("*");
+//     }
+//  document.write("</br>");
  
  
-}  
+// }  
 
-// outer loop(5 rows 5 coloums)
-    for(let i = 1; i <= 5; i++){
-        // inner loop
-    for(let j = 1; j <= 5; j++){
-      document.write("*");
-    }
- document.write("</br>");
+// // outer loop(5 rows 5 coloums)
+//     for(let i = 1; i <= 5; i++){
+//         // inner loop
+//     for(let j = 1; j <= 5; j++){
+//       document.write("*");
+//     }
+//  document.write("</br>");
  
-}  
+// }  
 
-// odd numbers
- for(let i = 1; i <= 10; i=i+2){
-        // inner loop
-    for(let j = 1; j <= i; j++){
-      document.write("*");
-    }
- document.write("</br>");
+// // odd numbers
+//  for(let i = 1; i <= 10; i=i+2){
+//         // inner loop
+//     for(let j = 1; j <= i; j++){
+//       document.write("*");
+//     }
+//  document.write("</br>");
  
-} 
+// } 
 
-for(let i = 1; i <= 10; i++){
-        // inner loop
-    for(let j = 10; j >= i; j--){
-      document.write("*");
-    }
- document.write("</br>");
+// for(let i = 1; i <= 10; i++){
+//         // inner loop
+//     for(let j = 10; j >= i; j--){
+//       document.write("*");
+//     }
+//  document.write("</br>");
  
-} 
+// } 
 
 
 
+// let city = prompt("Whats your city?")
+// if(city === "KARACHI"){
+//     console.log("Welcome to city of lights");
+// }
+
+// CONVERT INTO LOWERCASE
+// let city = prompt("Whats your city?")
+// if(city === "LAHORE"){
+//     console.log(city.toLowerCase());
+// }
+
+// CONVERT ITNO UPPERCASE
+// let city = prompt("Whats your city?")
+// if(city === "lahore"){
+//     console.log(city.toUpperCase());
+// }
+
+// let studentName = prompt("Enter the mostly absent student name")
+// // studentName = studentName.toUpperCase()
+// if(studentName === "ASIA"){
+//     console.log(`${studentName} is mostly the absent in the class`);  
+// }
+// else{
+//     console.log(`${studentName}is the punchtual student`);  
+// }
+
+
+// let userkhuwahish = prompt("What you wanna eat?")
+// const bakeryItems = ["cakes", "pastriies", "juices" , "cookies"]
+// let flag = false
+
+// for(let i = 0; i<bakeryItems.length; i++){
+//     if(userkhuwahish == bakeryItems[i]){
+//       flag = true
+//     }
+// }
+// if(flag){
+//     console.log("yes available");
+    
+// }
+
+
+
+// let username = "manahil"
+// let final = username.slice(0,1).toUpperCase() + username.slice(1).toLowerCase()
+// console.log(final);
+
+
+// let monthsName = prompt("Enter the months")
+// const months = ["January" , "February", "March", "April", "May", "June", "July" ,
+//                 "August" , "September" ,"October" , "November" ,"December"
+// ]
+
+//  for(let i = 0; i<months.length; i++){
+//     if(months[i.length] === 3){
+//      document.write(months[i].slice(0,3).toUpperCase() + "<br>")
+//     }
+//  }
+
+
+
+// split
+// yeh string ko array mai convert kerta hai
+// let word = "Hello World"
+// console.log(word.split(" "));
+
+// // join
+// const colors = ["pink" , "black" ,"yellow" , " blue"]
+// console.log(colors.join("  "));
+
+
+
+let paragraph = "i love javascript bcs it makes website interactive and dynamic.learning javascript helps me understand how web pages really work;"
+let words = paragraph.split(" ")
+
+for(let i = 0; i<words.length; i++){
+    let singleword = words[i];
+    words[i] = singleword[0].toUpperCase() + singleword.slice(1).toLowerCase()
+}
+let result = words.join(" ")
+alert(result)
+
+document.write(`<h1>Orignal Paragraph</h1><strong>${paragraph}</strong`)
+document.write("<br>")
+document.write(`<h1>Capitalized Paragraph</h1><strong>${result}</strong`)
