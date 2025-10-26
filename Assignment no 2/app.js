@@ -52,55 +52,55 @@
 
 // increement
 // 1 to 10 counting
-for(let i = 1; i <= 10; i++){
-    console.log(i); 
-}
+// for(let i = 1; i <= 10; i++){
+//     console.log(i); 
+// }
 
-// decreement
-// reverse counting 10 to 1
-for(let i = 10; i >= 1; i--){
-    console.log(i); 
-}
+// // decreement
+// // reverse counting 10 to 1
+// for(let i = 10; i >= 1; i--){
+//     console.log(i); 
+// }
 
-// multiply by 2
-for(let i = 1; i <= 10; i++){
-    console.log(i*2); 
-}
+// // multiply by 2
+// for(let i = 1; i <= 10; i++){
+//     console.log(i*2); 
+// }
 
-// modulus
-for(let i = 1; i <= 10; i++){
-    console.log(i%2); 
-}
+// // modulus
+// for(let i = 1; i <= 10; i++){
+//     console.log(i%2); 
+// }
 
-// even numbers
-// wh number jo 2 sai multiply honai baad remainder 0 ay tu even hoga
-for(let i = 1; i <= 10; i++){
-//    console.log(i);
-   if(i % 2 === 0){
-    console.log(i);
-   } 
-}
+// // even numbers
+// // wh number jo 2 sai multiply honai baad remainder 0 ay tu even hoga
+// for(let i = 1; i <= 10; i++){
+// //    console.log(i);
+//    if(i % 2 === 0){
+//     console.log(i);
+//    } 
+// }
 
-// odd numbers
-// wh number jo 2 sai divide honai kai baad remainder dai to odd hoga
-for(let i = 1; i <= 10; i+=2){
-    console.log(i);
-   } 
+// // odd numbers
+// // wh number jo 2 sai divide honai kai baad remainder dai to odd hoga
+// for(let i = 1; i <= 10; i+=2){
+//     console.log(i);
+//    } 
 
-// largest no chahiye
-let array = [20,30,40,400,900];
-// assume kerlia
-let largestNum = [0];
-for(let i = 0; i < array.length; i++){
-    // console.log(array[i]);
-if(array[i] > largestNum){
-    largestNum = array[i] 
-    // 20       =  20 
-}
-} 
-console.log(largestNum);
+// // largest no chahiye
+// let array = [20,30,40,400,900];
+// // assume kerlia
+// let largestNum = [0];
+// for(let i = 0; i < array.length; i++){
+//     // console.log(array[i]);
+// if(array[i] > largestNum){
+//     largestNum = array[i] 
+//     // 20       =  20 
+// }
+// } 
+// console.log(largestNum);
 
-// 
+// // 
 
 
 
@@ -247,16 +247,245 @@ console.log(largestNum);
 
 
 
-let paragraph = "i love javascript bcs it makes website interactive and dynamic.learning javascript helps me understand how web pages really work;"
-let words = paragraph.split(" ")
+// let paragraph = "i love javascript bcs it makes website interactive and dynamic.learning javascript helps me understand how web pages really work;"
+// let words = paragraph.split(" ")
 
-for(let i = 0; i<words.length; i++){
-    let singleword = words[i];
-    words[i] = singleword[0].toUpperCase() + singleword.slice(1).toLowerCase()
+// for(let i = 0; i<words.length; i++){
+//     let singleword = words[i];
+//     words[i] = singleword[0].toUpperCase() + singleword.slice(1).toLowerCase()
+// }
+// let result = words.join(" ")
+// alert(result)
+
+// document.write(`<h1>Orignal Paragraph</h1><strong>${paragraph}</strong`)
+// document.write("<br>")
+// document.write(`<h1>Capitalized Paragraph</h1><strong>${result}</strong`)
+
+
+
+
+// -------------------------------------------------------------------------------
+// / chapter 28
+// STRING CONVERT INTO NUMBERS 
+// if we apply plus symbol; then it change to number
+
+// let str = +"2323433424"
+// check type
+// // console.log(typeof str);
+
+
+// 1st method(parseInt(string ko number mai convert kerdia)) 
+// let str = +"2323433424.6786756456"(decimal kai baad ki value
+// ko yeh parseint ignore kerdeta hai wh ni likhta)
+// let parsed = parseInt(str)
+// console.log(parsed);
+// console.log(typeof parsed);
+
+// 2nd method (parsefloat{yeh decimal kai baad ki value 
+// bhi show kerta hai but is mai bhi roundof ni kerta})
+// let str = "56765.78625"
+// let parsed = parseFloat(str)
+// console.log(parsed);
+// console.log(typeof parsed);
+
+// 3rd method(number method)
+// let str = "56765.78625"
+// let number = Number(str)
+// console.log(number);
+// console.log(typeof number);
+
+// NUMBER CONVERT INTO STRING
+// let str = 90
+// 1st method (concat)
+// console.log(str + " ");
+// console.log(typeof (str + " "));
+
+// 2nd method (tostring)
+// let stringed = str.toString()
+// console.log(typeof (stringed));
+
+// / 2nd method (tostring)
+// let stringed1 = String(str)
+// console.log(typeof (stringed1));
+
+// 786278346786.toString()
+// string(78678686)
+
+
+
+// -------------------------------------------------------------------------------
+// CHAPTER 30
+// CONTROLLONG THE LENGTH OF DECIMALS NUMBERS
+// let number = 23131132.7865757
+// is ki length ko fix kernai jarahai hai k point
+//  kai baad kitni values chayie by the help oof length
+// let fixed = number.toFixed(2)
+// console.log(fixed);
+
+// agar hm is ko empty chorai tu yeh ignore kerdasiga point 
+// kai baad ki value or round of kerdiaga
+// let fixed1 = number.toFixed()
+// console.log(fixed1);
+
+
+
+// ----------------------------------------------------------------------------------------
+// CHAPTER 31
+// GETTING THE CURRENT DATE AND TIME
+// constructor (new){new ka keyword hai ye}
+
+// date and time
+// let today = new Date()
+// console.log(today);
+// console.log(typeof today);
+
+// console.log(today.getFullYear());
+// console.log(today.getMonth());
+// console.log(today.getHours());
+// console.log(today.getMinutes());
+// console.log(today.getDate());
+// console.log(today.getSeconds());
+// console.log(today.getMilliseconds());
+// console.log(today.getTime());
+
+
+// TASK 1(how to finf your birth year)
+// let userAge = +prompt("Enter your age")
+// let currentYear = new Date().getFullYear()
+// let birthYear = currentYear - userAge
+
+// console.log("You were  born in " + birthYear);
+
+
+// Task 2(find current month)
+// let today = new Date()
+// let currentmonth = today.getMonth()
+
+// let months = ["january" , "feburary" , "march",
+//                "april" , "may ", "june", "july ","august"
+//               ,"september" ,"october ", "november" ,
+//                "december"]
+// document.write(months[currentmonth])
+
+// TASK 3 (get day)
+// let today = new Date()
+// let currentDay = today.getDay()
+// let days = ["Sunday","Monday" ,"Tuesday" , "Wed" , "Thurs" , "Fri" ,"Sat" ]
+// document.write(days[currentDay])
+
+
+// TASK 4(GET RAMADAN DATE )
+// let today = new Date()
+// let ramadanDate = new Date("17 feb 2026")
+
+// let diff = ramadanDate - today
+
+// let sec = Math.floor(diff/1000)
+// let min = Math.floor(sec/60)
+// let hours = Math.floor(min/60)
+// let  diffDays= Math.floor(diff / (1000 * 60 * 60 *24))
+// let week = Math.floor(diffDays/7)
+
+
+// document.write(`<h1>Remaining weeks in ramadan:${week} <br/>
+//                Remaining days in ramadan:${diffDays}<br/>
+//                Remaining hours in ramadan:${hours}<br/>
+//                Remaining minutes in ramadan:${min}<br/>
+//                Remaining seconds in ramadan:${sec}</h1>`)
+
+
+// ----------------------------------------------------------------------------------------------------
+// CHAPTER 35 FUNCTION
+// HOW TO GET DATE
+// parameter(jaha data store hoga yeh recive keraiga)
+// function getDate(){
+//     let today = new Date()
+//     console.log(today.getDate());
+// }
+// // argument(jaha sai data pass kerrahai hai)
+// getDate()
+
+
+// // HOW TO GET TIME
+// function getTime(){
+//     let today = new Date()
+//     console.log(today.getHours());
+// }
+// getTime()
+
+// // HOW TO GET YEAR
+// function getYear(){
+//     let today = new Date()
+//     console.log(today.getFullYear());
+// }
+// getYear()
+
+
+// SUM OF NUMBERS
+// 1ST MEETHOD
+// function number(number){
+//     document.write(`${number}`)
+// }
+// number(3 + 2)
+
+
+// 2ND METHOD
+// function number(number1 , number2){
+//     document.write(`${number1 + number2}`)
+// }
+// number(3 , 2)
+
+
+// HOW TO SUM OF NUMBERS BY THE HELP OF INPUT FIELD
+// function sum(){
+//     firstNumber = Number(document.getElementById("firstNum").value)
+//     secondNumber = Number(document.getElementById("secondNum").value)
+
+//     let total = firstNumber + secondNumber
+//     let result = document.getElementById("result")
+//     result.innerText = `The sum is ${total}`
+// }
+
+
+// CONVERT INTO LOWERCASE
+
+// function text(){
+//     let text = (document.getElementById("firstText").value) 
+//     let lower = text.toLowerCase()
+//     let final = document.getElementById("final")
+//     final.innerText = `${lower}`
+// }
+
+
+// CONVERT INTO UPPERCASE
+// function text(){
+//     let text = (document.getElementById("secondText").value)
+//     let upper = text.toUpperCase()
+//     let final = document.getElementById("final")
+//     final.innerText = (`${upper}`)
+// }
+
+
+// MULTIPLE CASES
+// UPPERCASE
+function convert(type){
+    let text = document.getElementById("some").value
+    let result
+if(type === "upper"){
+    result =text.toUpperCase()
 }
-let result = words.join(" ")
-alert(result)
+if(type === "lower"){
+    result =text.toLowerCase()
+}
+if(type === "capitalize"){
+    result =text.charAt(0).toUpperCase() + text.slice(1).toLowerCase()
+}
+if(type === "bold"){
+    result =`<strong>${text}</strong>`
+}
+if(type === "italic"){
+    result =`<em>${text}</em>`
+}
+document.getElementById("result").innerHTML = result
+}
 
-document.write(`<h1>Orignal Paragraph</h1><strong>${paragraph}</strong`)
-document.write("<br>")
-document.write(`<h1>Capitalized Paragraph</h1><strong>${result}</strong`)

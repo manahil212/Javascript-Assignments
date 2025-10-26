@@ -1,0 +1,40 @@
+.color button{
+    background-color:bisque;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color:darkblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 15px;
+    color: black;
+   box-shadow:  10px 10px 5px lightgoldenrodyellow;
+;
+   
+    
+}
+
+.main{
+    /* background-image :url('pic1.jpg');
+    background-repeat: no-repeat;
+background-size: cover; */
+   justify-content: center;
+   margin-top: 300px;
+   margin-left: 400px;
+   height: 500px;
+}
+.main label{
+    font-size: 30px;
+    padding: 0%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 60px;
+   
+}
+
+.text{
+    font-size: 45px;
+    border-radius: 10px;
+  
+}
