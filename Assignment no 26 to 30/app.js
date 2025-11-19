@@ -90,3 +90,70 @@
 // else{
 //   alert( Try again! The secret number was " + secretNum)
 // }
+// -----------------------------------------------------------------------------------------------------
+
+// moving car assignment
+let current = 10
+const move = (e) =>{
+    console.log(e.key);
+if(e.key === "d"){
+    let image = document.getElementById("car")
+    current += 10
+    image.style.marginLeft = current + "px"
+  }
+}
+
+ if(e.key === "a"){
+    let image = document.getElementById("car")
+    current -= 10
+    image.style.marginLeft = current + "px"
+  }
+
+
+
+// jb hm click keraingai tu inputfield highlight hojaigi (onfocus)
+const borderChange = (e) =>{
+  e.target.style.outline = "none"
+  e.target.style.border = "2px solid red"
+  e.target.style.color = "white"
+   
+}
+
+
+// jb hm inputfield kai bahir click keraingai tu tu inputfield ka
+//  color change hojaiga porana wala ni hoga (onblur)
+const abc = (e) =>{
+  console.log(e.target);
+   e.target.style.border= "none"
+  e.target.style.outline = "none"
+  e.target.style.border= "2px solid green"
+  //  e.target.style.backgroundColor= "purple"
+    e.target.style.color= "white"
+   
+}
+
+// without click hover color show hojaiga(onmouseover)
+const increase = (e) =>{
+  console.log(e.target);
+  e.target.style.border= "2px solid white"
+   e.target.style.backgroundColor= "blue"
+    e.target.style.color= "white"
+   
+}
+// click keraingai tu color show hoga(onmouseout)
+const out = (e) =>{
+  console.log(e.target);
+  e.target.style.border= "2px solid white"
+   e.target.style.backgroundColor= "blue"
+    e.target.style.color= "white"
+   
+}
+
+
+const greet = (e) =>{
+  console.log(e.target);
+   e.target.style.backgroundColor= "blue"
+    e.target.style.color= "white"
+   
+}
+

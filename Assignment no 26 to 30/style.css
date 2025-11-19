@@ -1,0 +1,8 @@
+body{
+    background-image: url(image/road.jpg);
+}
+
+img{
+    position: absolute;
+    bottom: 0px;
+}
